@@ -3,3 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+main{
+    display: flex;
+}
+nav{
+    background-color: black;
+    color: grey;
+    height: calc(100vh - 100px);
+    width: 10vw;
+}
+footer{
+    background-color: darkgrey;
+    height: 100px;
+    width: 100vw;
+}
+
+section div.upgrade{
+    background-color: darkblue;
+    height: 100px;
+    width:calc(100vw - 10vw);
+}
