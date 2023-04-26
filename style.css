@@ -12,15 +12,7 @@ nav{
     height: calc(100vh - 100px);
     width: 220px;
 }
-@media screen and (max-width: 460px) {
-    nav{
-        width: 100px;
-    }
-    section div.upgrade{
-        width: calc(100vw - 100px);
-        background-color: purple;
-    }
-}
+
 footer{
     background-color: darkgrey;
     height: 100px;
@@ -31,4 +23,12 @@ section div.upgrade{
     background-color: darkblue;
     height: 100px;
     width: calc(100vw - 220px);
+}
+@media screen and (max-width: 460px) {
+    nav{
+        width: 100px;
+    }
+    section div.upgrade{
+        width: calc(100vw - 100px);
+    }
 }
