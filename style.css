@@ -48,14 +48,11 @@ section.main-part{
     background-color:#141922;
     width: calc(100vw - 300px);
     color: #7b7e82;
-
-
 }
 section.main-part div.upgrade{
     background-color: #080b12;
     height: 100px;
     position: relative;
-
 }
 div.main-header ul.flex{
     list-style-type: none;
@@ -73,9 +70,28 @@ section.main-part div.upgrade button{
     padding: 1rem 5rem;
     border-radius: 30px;
     position: absolute;
-    right: 0;
+    right: 10px;
     bottom: 20px;
 }
+div.main-body{
+    margin-left: 1rem;
+}
+div.main-body h2{
+    color: white;
+    margin: 2rem 0;
+}
+div.main-body section.songs{
+    display: flex;
+}
+div.main-body section.songs div.single{
+    text-align: center;
+    width: calc((100vw / 6) - 6rem);    
+    margin-right: 2.5rem;
+}
+div.main-body section.songs div.single img{
+    width: 220px;
+    height: 220px;
+}    
 footer{
     background-color: #282828;
     height: 100px;
