@@ -25,22 +25,59 @@ nav img{
     display: flex;
     flex-direction: column;
 }
-div.flex-col i{
+.flex{
+    display: flex;
+}
+.spaced{
+    justify-content: space-between;
+}
+
+div.flex-col ul li{
     margin-bottom: 0.5rem;
 }
-div.flex-col h3{
-    margin-top: 0.5rem;
+.flex-col b{
+    color: white;
+    margin-left: 0.5rem;
+    font-size: 20px;
+}
+main section h3{
+    margin: 0.8rem 0;
+    color: white;
 }
 section.main-part{
-    background-color: darkblue;
+    background-color:#141922;
     width: calc(100vw - 300px);
+    color: #7b7e82;
+
+
 }
 section.main-part div.upgrade{
-    background-color: grey;
+    background-color: #080b12;
     height: 100px;
+    position: relative;
+
+}
+div.main-header ul.flex{
+    list-style-type: none;
+    justify-content: center;
+    margin: 0.5rem;
+    flex-wrap: wrap;
+}
+div.main-header ul.flex li{
+    margin-right: 0.8rem;
+}
+section.main-part div.upgrade button{
+    background-color:#080b12;
+    border: 1px solid white;
+    color: white;
+    padding: 1rem 5rem;
+    border-radius: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
 }
 footer{
-    background-color: darkgrey;
+    background-color: #282828;
     height: 100px;
     width: 100vw;
 }
@@ -55,5 +92,8 @@ footer{
     }
     section.main-part{
         width: calc(100vw - 100px);
+    }
+    main section h3{
+        display: none;
     }
 }
