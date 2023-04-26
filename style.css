@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 main{
     display: flex;
 }
@@ -12,11 +15,21 @@ nav{
     height: calc(100vh - 100px);
     width: 300px;
 }
-nav div img{
+nav img{
     width: 150px;
     height: 100px;
     margin: 0 auto;
     padding: 0;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+div.flex-col i{
+    margin-bottom: 0.5rem;
+}
+div.flex-col h3{
+    margin-top: 0.5rem;
 }
 section.main-part{
     background-color: darkblue;
