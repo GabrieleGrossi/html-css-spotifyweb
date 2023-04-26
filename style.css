@@ -18,17 +18,19 @@ footer{
     height: 100px;
     width: 100vw;
 }
-
-section div.upgrade{
+section.main-part{
     background-color: darkblue;
-    height: 100px;
     width: calc(100vw - 220px);
+}
+section.main-part div.upgrade{
+    background-color: grey;
+    height: 100px;
 }
 @media screen and (max-width: 460px) {
     nav{
         width: 100px;
     }
-    section div.upgrade{
+    section.main-part{
         width: calc(100vw - 100px);
     }
 }
