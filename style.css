@@ -10,22 +10,32 @@ nav{
     background-color: black;
     color: grey;
     height: calc(100vh - 100px);
-    width: 220px;
+    width: 300px;
 }
-
-footer{
-    background-color: darkgrey;
+nav div img{
+    width: 150px;
     height: 100px;
-    width: 100vw;
+    margin: 0 auto;
+    padding: 0;
 }
 section.main-part{
     background-color: darkblue;
-    width: calc(100vw - 220px);
+    width: calc(100vw - 300px);
 }
 section.main-part div.upgrade{
     background-color: grey;
     height: 100px;
 }
+footer{
+    background-color: darkgrey;
+    height: 100px;
+    width: 100vw;
+}
+
+
+
+
+/* Phone dimension */
 @media screen and (max-width: 460px) {
     nav{
         width: 100px;
