@@ -132,8 +132,11 @@ div.main-body section.songs div.single img:hover{
 }
 div.artists section.songs div.single img{
     border-radius: 50%;
+    margin-bottom: 2rem;
 }
-
+div.artists section.songs div.single h3{
+    margin-bottom: 3rem;
+}
 footer{
     background-color: #282828;
     height: 100px;
@@ -194,12 +197,6 @@ div.padding{
     section.main-part{
         width: calc(100vw - 50px);
     }
-    nav section h3{
-        display: none;
-    }
-    div.main-body section.songs div.single{
-        width: calc(100% / 2 - 1.2rem); 
-    }
     .logo-footer i{
         font-size: 1rem;
     }
@@ -209,6 +206,12 @@ div.padding{
 }
 /* XSmall dimension */
 @media screen and (max-width:580px) {
+    div.main-body section.songs div.single{
+        width: calc(100% / 2 - 1.2rem); 
+    }
+    main nav section h3{
+        display: none;
+    }
     nav{
         width: 50px;
     }
