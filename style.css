@@ -43,6 +43,9 @@ div.flex-col ul li{
     margin-bottom: 0.5rem;
     list-style-type: none;
 }
+nav ul li:hover{
+    border-left: green 2px solid;
+} 
 .logo-dimension{
     height: 25px;
     width: 25px;
@@ -81,6 +84,9 @@ div.main-header ul.flex li{
     margin-right: 0.8rem;
     margin-top: 1rem;
 }
+div.main-header ul.flex li:hover{
+    border-bottom: 2px solid green;
+}
 section.main-part div.upgrade button{
     background-color:#080b12;
     border: 1px solid white;
@@ -90,6 +96,13 @@ section.main-part div.upgrade button{
     position: absolute;
     right: 10px;
     bottom: 30px;
+}
+section.main-part div.upgrade button a{
+    color: white;
+}
+section.main-part div.upgrade button:hover{
+    font-size-adjust: 0.65;
+
 }
 div.main-body{
     margin-left: 1rem;
@@ -161,9 +174,9 @@ div.padding{
     font-size: 1.5rem;
     color: white;
 }
-
-/* Laptopo/Desktop dimension */
-
+.bigger:hover{
+    font-size-adjust: 1;
+}
 
 /* Medium dimension */
 @media screen and (max-width: 992px) {
@@ -178,9 +191,6 @@ div.padding{
 
 /* Small dimension */
 @media screen and (max-width: 768px) {
-    nav{
-        width: 50px;
-    }
     section.main-part{
         width: calc(100vw - 50px);
     }
@@ -196,14 +206,29 @@ div.padding{
     .mini-logo i{
         margin-left: 0.5rem;
     }
-    nav section a{
-        display: none;
-    }
 }
 /* XSmall dimension */
 @media screen and (max-width:580px) {
+    nav{
+        width: 50px;
+    }
+    nav section ul li{
+        margin-left: 5px;
+    }
     nav section a{
         display: none;
     }
-    
+    hr{
+        display: none;
+    }
+    footer section img{
+        width: 30px;
+        height: 30px;
+    }
+    .mini-logo i{
+        margin-left: 0;
+    }
+    footer section div h3{
+        margin-right: 0;
+    }
 }
