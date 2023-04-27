@@ -15,6 +15,13 @@ nav{
     height: calc(100vh - 100px);
     width: 280px;
 }
+a{
+    text-decoration: none;
+    color: #6f6f6f;
+}
+a:hover{
+    color: white;
+}
 nav img{
     width: 150px;
     height: 100px;
@@ -158,8 +165,8 @@ div.padding{
 /* Laptopo/Desktop dimension */
 
 
-/* Tablet dimension */
-@media screen and (max-width: 768px) {
+/* Medium dimension */
+@media screen and (max-width: 992px) {
     div.main-body section.songs div.single{
         width: calc(100% / 4 - 1.2rem); 
     }
@@ -169,8 +176,8 @@ div.padding{
     
 }
 
-/* Phone dimension */
-@media screen and (max-width: 503px) {
+/* Small dimension */
+@media screen and (max-width: 768px) {
     nav{
         width: 50px;
     }
@@ -189,4 +196,14 @@ div.padding{
     .mini-logo i{
         margin-left: 0.5rem;
     }
+    nav section a{
+        display: none;
+    }
+}
+/* XSmall dimension */
+@media screen and (max-width:580px) {
+    nav section a{
+        display: none;
+    }
+    
 }
