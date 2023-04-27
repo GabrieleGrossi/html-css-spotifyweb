@@ -47,8 +47,10 @@ main section h3{
 }
 section.main-part{
     background-color:#141922;
-    width: calc(100vw - 200px);
+    width: calc(100% - 200px);
+    height: calc(100vh - 100px);
     color: #7b7e82;
+    overflow: auto;
 }
 section.main-part div.upgrade{
     background-color: #080b12;
@@ -72,18 +74,22 @@ section.main-part div.upgrade button{
     background-color:#080b12;
     border: 1px solid white;
     color: white;
-    padding: 1rem 5rem;
+    padding: 1rem 2.5rem;
     border-radius: 30px;
     position: absolute;
     right: 10px;
-    bottom: 20px;
+    bottom: 30px;
 }
 div.main-body{
     margin-left: 1rem;
+    overflow: auto;
 }
 div.main-body h2{
     color: white;
     margin: 2rem 0;
+}
+div.main-body h4{
+    margin-bottom: 2rem;
 }
 div.main-body section.songs{
     display: flex;
@@ -91,12 +97,16 @@ div.main-body section.songs{
 }
 div.main-body section.songs div.single{
     text-align: center;  
-    margin-right: 0.5rem;
-    width: calc(100% / 6 - 0.5rem); 
+    margin-right: 1.2rem;
+    width: calc(100% / 6 - 1.2rem); 
 }
 div.main-body section.songs div.single img{
     width: 100%;
-}    
+}
+div.artists section.songs div.single img{
+    border-radius: 50%;
+}
+
 footer{
     background-color: #282828;
     height: 100px;
@@ -124,25 +134,33 @@ div.padding{
     font-size: 1.5rem;
     margin: 0 auto;
 }
+
+/* Laptopo/Desktop dimension */
+
+
 /* Tablet dimension */
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
     div.main-body section.songs div.single{
-        width: calc(100% / 4 - 0.5rem); 
+        width: calc(100% / 4 - 1.2rem); 
+    }
+    div.main-body{
+        font-size: 0.7rem;
     }
     
 }
+
 /* Phone dimension */
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 503px) {
     nav{
         width: 50px;
     }
     section.main-part{
         width: calc(100vw - 50px);
     }
-    main section h3{
+    nav section h3{
         display: none;
     }
     div.main-body section.songs div.single{
-        width: calc(100% / 2 - 0.5rem); 
+        width: calc(100% / 2 - 1.2rem); 
     }
 }
