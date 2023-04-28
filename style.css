@@ -174,7 +174,7 @@ div.padding{
 }
 .logo-footer i{
     margin-right: 1.2rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
 }
 .logo-footer{
@@ -196,9 +196,16 @@ div.vol-bar{
 div.vol-bar div.position-tempo{
     background-color: #6f6f6f;
     border-radius: 5px;
-    width: 75px;
+    width: 55%;
     height: 5px;
 }
+div.vol-bar div.position-tempo:hover{
+    background-color: green;
+}
+
+section div.logo-footer div.vol-bar{
+    width: 150px;
+} 
 
 
 /* Medium dimension */
