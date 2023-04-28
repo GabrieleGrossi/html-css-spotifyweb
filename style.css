@@ -177,9 +177,29 @@ div.padding{
     font-size: 1.5rem;
     color: white;
 }
+.logo-footer{
+    justify-content: center;
+}
 .bigger:hover{
     font-size-adjust: 1;
 }
+.tempo{
+    margin-top: 1.5rem;
+}
+div.vol-bar{
+    height: 5px;
+    width: 300px;
+    background-color: #141922;
+    margin: 0.5rem 1rem;
+    border-radius: 5px;
+}
+div.vol-bar div.position-tempo{
+    background-color: #6f6f6f;
+    border-radius: 5px;
+    width: 75px;
+    height: 5px;
+}
+
 
 /* Medium dimension */
 @media screen and (max-width: 992px) {
