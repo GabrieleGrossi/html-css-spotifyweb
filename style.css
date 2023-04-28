@@ -216,7 +216,9 @@ section div.logo-footer div.vol-bar{
     div.main-body{
         font-size: 0.7rem;
     }
-    
+    div.vol-bar{
+        width: 200px;
+    }
 }
 
 /* Small dimension */
@@ -260,5 +262,8 @@ section div.logo-footer div.vol-bar{
     }
     footer section div h3{
         margin-right: 0;
+    }
+    div.vol-bar{
+        width: 100px;
     }
 }
