@@ -94,9 +94,17 @@ div.main-header ul.flex li{
     margin-right: 0.8rem;
     margin-top: 1rem;
 }
-div.main-header ul.flex li:hover{
-    border-bottom: 2px solid green;
+
+.border{
+    width: 50%;
+    height: 3px;
+    margin: 0 auto;
+    background-color: transparent;
 }
+div.main-header ul.flex li:hover .border{
+    background-color: green;
+}
+
 section.main-part div.upgrade button{
     background-color:#080b12;
     border: 1px solid white;
